@@ -1,3 +1,7 @@
+/***********************************
+** GENERICS
+************************************/
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +10,11 @@ body {
     margin: 0;
     font-family: 'Prata', serif;
 }
+
+/***********************************
+** PARTICULAR CASES
+************************************/
+
 
 h1, h3 {
     margin: 0;
@@ -77,6 +86,15 @@ h2 {
     }
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 #cover {
     position: relative;
     width: 100vw;
@@ -90,6 +108,7 @@ h2 {
 }
 
 #cover h1 {
+    position: relative;
     color: white;
     font-size: 2rem;
     line-height: 29px;
@@ -151,7 +170,7 @@ a.btn-header {
     letter-spacing: 2px;
     fill: #FFFFFF;
     color: #FFFFFF;
-    background-color: #FFFFFF00;
+    background-color: rgb(180, 157, 123);
     font-family: "Plus Jakarta Sans";
     font-weight: 700;
     border: 2px solid white;
@@ -301,7 +320,7 @@ a.btn-header:hover {
     font-weight: 200;
 }
 
-a.book-btn {
+.book-btn {
     background-color: rgb(0, 29, 46);
     box-shadow: none;
     box-sizing: border-box;
@@ -325,10 +344,12 @@ a.book-btn {
     text-decoration-thickness: auto;
     text-transform: uppercase;
     width: 100%;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    cursor: pointer;
 }
 
-a.book-btn:hover {
+.book-btn:hover {
     background-color: #00273d;
 }
 
@@ -365,10 +386,10 @@ a.book-btn:hover {
     height: 100%;
 }
 
-.splide__slide img {
+.splide__slide div {
     display: block;
-    object-fit: cover;
-    object-position: center;
+    background-position: center;
+    background-size: cover;
     height: 100%;
     width: 100%;
 }
@@ -385,29 +406,66 @@ a.book-btn:hover {
     margin-bottom: 70px;
 }
 
-#gallery .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: -20px;
+#gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 70px;
 }
 
 .gallery-item {
+    position: relative;
     display: block;
-    width: 20vw;
-    height: 20vw;
-    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 100%;
 }
 
 .gallery-item-image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.gallery-item:hover {
-    cursor: pointer;
+#gallery-talk {
+    position: relative;
+}
+
+#host-talk {
+    width: 70%;
+    background-color: #F3F3F3;
+    padding: 70px 160px 70px 70px;
+    font-family: "Plus Jakarta Sans";
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+#mark {
+    text-align: right;
+    padding-right: 50px;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#host-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#host-photo div {
+    width: 100%;
+    height: 500px;
+    background-image: url('assets/images/hote.jpg');
+    background-size: cover;
 }
 
 #booking {

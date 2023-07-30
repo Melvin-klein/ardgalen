@@ -6,12 +6,13 @@
     <title>Le domaine d'Ardgalen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700&family=Prata&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700&family=Prata&family=Tangerine&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="cover">
+        <div class="overlay"></div>
         <h1>Le Domaine d'Ardgalen</h1>
         <div id="lead-1" class="lead">
             Votre maison d'hôte
@@ -19,7 +20,7 @@
         <div id="lead-2" class="lead">
             au cœur de la campagne
         </div>
-        <a href="#room-cachemire" class="btn-header">
+        <a href="#rooms" class="btn-header">
             Réservez une chambre
         </a>
         <a href="#features" id="down">
@@ -60,10 +61,12 @@
                 <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><img src="assets/images/room.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room2.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room3.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room4.jpg"></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire2.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire3.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire4.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire5.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/cachemire6.jpg');"></div></li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +75,7 @@
                 <p class="room-price">À partir de 120€ par nuit</p>
                 <h2>Chambre Cachemire</h2>
                 <div class="hr"></div>
-                <p class="room-description-text">Inspired by the traditional France village style, the villa features classic and warm interior, terrace as well as many handmade decor details with amazing story...</p>
+                <p class="room-description-text">Véritable cocon romantique, la chambre cachemire est le lieu idéal pour tous les couples qui souhaitent se resourcer. Son atmosphère romantique et ses couleurs pastels renderont vos nuits paisibles et douces. Cette chambre est équipée d'un lit queen size digne des plus grands hôtels.</p>
                 <div class="room-features">
                     <div class="room-feature">
                         <img src="assets/icons/users.png" alt="">
@@ -83,7 +86,7 @@
                         <div>16 m<sup>2</sup></div>
                     </div>
                 </div>
-                <a href="#" class="book-btn">Réserver maintenant</a>
+                <a href="#booking" class="book-btn" data-book="cachemire">Réserver maintenant</a>
             </div>
         </div>
 
@@ -92,19 +95,19 @@
                 <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide"><img src="assets/images/room.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room2.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room3.jpg"></li>
-                            <li class="splide__slide"><img src="assets/images/room4.jpg"></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/hepburn.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/hepburn2.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/hepburn3.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/hepburn4.jpg');"></div></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="room-description">
                 <p class="room-price">À partir de 120€ par nuit</p>
-                <h2>Chambre Cachemire</h2>
+                <h2>Chambre Hepburn</h2>
                 <div class="hr"></div>
-                <p class="room-description-text">Inspired by the traditional France village style, the villa features classic and warm interior, terrace as well as many handmade decor details with amazing story...</p>
+                <p class="room-description-text">Immergez-vous dans le monde du cinéma de l'époque de "Diamants sur canapé" avec cette chambre à l'éfigie de la célébre actrice Audrey Hepburn. Cette chambre chic dispose d'un lit queen size de haute qualité. Ses tons mauves libèrent toutes les tensions.</p>
                 <div class="room-features">
                     <div class="room-feature">
                         <img src="assets/icons/users.png" alt="">
@@ -115,43 +118,187 @@
                         <div>16 m<sup>2</sup></div>
                     </div>
                 </div>
-                <a href="#" class="book-btn">Réserver maintenant</a>
+                <a href="#booking" class="book-btn" data-book="hepburn">Réserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="room-img">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><div style="background-image: url('assets/images/room.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/room2.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/room3.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/room4.jpg');"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="room-description">
+                <p class="room-price">À partir de 120€ par nuit</p>
+                <h2>Chambre Muse</h2>
+                <div class="hr"></div>
+                <p class="room-description-text">Autrefois, cette chambre était un véritable temple de la musique. Guitare, piano, percusions et autres instruments ont rythmé la vie de cette pièce atypique. Plongez-vous dans cette loge musicale grâce à son lit queen size et son petit salon privé.</p>
+                <div class="room-features">
+                    <div class="room-feature">
+                        <img src="assets/icons/users.png" alt="">
+                        <div>4 personnes</div>
+                    </div>
+                    <div class="room-feature">
+                        <img src="assets/icons/square.png" alt="">
+                        <div>16 m<sup>2</sup></div>
+                    </div>
+                </div>
+                <a href="#booking" class="book-btn" data-book="muse">Réserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="room-img">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><div style="background-image: url('assets/images/zen.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/zen2.jpg');"></div></li>
+                            <li class="splide__slide"><div style="background-image: url('assets/images/zen3.jpg');"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="room-description">
+                <p class="room-price">À partir de 120€ par nuit</p>
+                <h2>Chambre Zen</h2>
+                <div class="hr"></div>
+                <p class="room-description-text">Parée de couleurs apaisantes comme le vert, cette chambre est la pièce idéale pour se ressourcer lors de séances de médiatation ou de lecture. Elle est aussi la chambre dédiée aux enfants grâce à ses deux lits simples. </p>
+                <div class="room-features">
+                    <div class="room-feature">
+                        <img src="assets/icons/users.png" alt="">
+                        <div>4 personnes</div>
+                    </div>
+                    <div class="room-feature">
+                        <img src="assets/icons/square.png" alt="">
+                        <div>16 m<sup>2</sup></div>
+                    </div>
+                </div>
+                <a href="#booking" class="book-btn" data-book="zen">Réserver maintenant</a>
             </div>
         </div>
     </div>
 
     <div id="gallery">
         <h2>Le domaine</h2>
-        <div class="container">
-            <a href="#img1" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/garden.jpg" class="gallery-item-image" id="img1">
+        <div id="gallery-talk" class="container">
+            <div id="host-talk">
+                <p>
+                    <strong>Chambre d'hôte - Piscine & Spa dans le Cubzaguais</strong><br/>
+                    <br />
+                    Situé à 30 minutes de Bordeaux, le Domaine d'Ardgalen vous propose trois chambres au sein d'une élégante longère du 18<sup>ème</sup> entourée d'un jardin propice à la détente et au bien-être.<br />
+                    <br />
+                    L'étage, entièrement mis à votre disposition, se compose de 3 chambres, d'un petit salon de lecture et de musique ainsi que d'une salle de bain partagée avec baignoire.<br />
+                    <br />
+                    Votre petit-déjeuner vous sera servi au rez-de-chaussé de la maison dans une ambiance pub anglais, sur une table de ferme invitant à la convivialité.<br />
+                    <br />
+                    Du côté jardin, profitez de la piscine bordée de sa vaste terrasse et de la belle cabane en bois où un jacuzzi de six places vous attendra pour des instants de relaxation en toute intimité.<br />
+                    <br />
+                    Le Domaine d'Ardgalen de trouve à 10 minutes à pied d'un joli centre équestre, <em>les Écuries de l'étang</em> et à 9 minutes en voiture du célébre cabaret <em>l'Ange Bleu</em> .<br />
+                    <br />
+                    La maison d'hôte se situe à 6 minutes en voiture du village de Salignac où pharmacie, centre médical, tabac, boulangerie, épicerie et coiffeur sont présents. Vous pourrez aussi visiter le Château Haut-Bicou et découvrir leurs vins certifiés en agriculture biologique. Si vous êtes amateurs de vins, vous êtes à 30 minutes des vignobles de Saint-Emilion, Fronsac et Côtes de Blayes.<br />
+                    <br />
+                    Le domaine est à seulement 35 minutes du centre ville de Bordeaux et à 45 minutes de l'aéroport.
+                </p>
+                <p id="mark">
+                    Votre hôte, Marie.
+                </p>
+            </div>
+            <div id="host-photo">
+                <div></div>
+            </div>
+        </div>
+        <div id="gallery-photos" class="container">
+            <a href="#ga1" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga1.jpg" class="gallery-item-image" id="ga1">
             </a>
-            <a href="#img2" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room.jpg" class="gallery-item-image" id="img2">
+            <a href="#ga2" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga2.jpg" class="gallery-item-image" id="ga2">
             </a>
-            <a href="#img3" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room2.jpg" class="gallery-item-image" id="img3">
+            <a href="#ga3" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga3.jpg" class="gallery-item-image" id="ga3">
             </a>
-            <a href="#img4" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room3.jpg" class="gallery-item-image" id="img4">
+            <a href="#ga4" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga4.jpg" class="gallery-item-image" id="ga4">
             </a>
-            <a href="#img3" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room2.jpg" class="gallery-item-image" id="img3">
+            <a href="#ga5" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga5.jpg" class="gallery-item-image" id="ga5">
             </a>
-            <a href="#img4" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room3.jpg" class="gallery-item-image" id="img4">
+            <a href="#ga6" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga6.jpg" class="gallery-item-image" id="ga6">
             </a>
-            <a href="#img3" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room2.jpg" class="gallery-item-image" id="img3">
+            <a href="#ga7" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga7.jpg" class="gallery-item-image" id="ga7">
             </a>
-            <a href="#img4" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room3.jpg" class="gallery-item-image" id="img4">
+            <a href="#ga8" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga8.jpg" class="gallery-item-image" id="ga8">
             </a>
-            <a href="#img3" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room2.jpg" class="gallery-item-image" id="img3">
+            <a href="#ga9" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga9.jpg" class="gallery-item-image" id="ga9">
             </a>
-            <a href="#img4" class="gallery-item" data-fslightbox="gallery">
-                <img src="assets/images/room3.jpg" class="gallery-item-image" id="img4">
+            <a href="#ga10" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga10.jpg" class="gallery-item-image" id="ga10">
+            </a>
+            <a href="#ga11" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga11.jpg" class="gallery-item-image" id="ga11">
+            </a>
+            <a href="#ga12" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga12.jpg" class="gallery-item-image" id="ga12">
+            </a>
+            <a href="#ga13" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga13.jpg" class="gallery-item-image" id="ga13">
+            </a>
+            <a href="#ga14" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga14.jpg" class="gallery-item-image" id="ga14">
+            </a>
+            <a href="#ga15" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga15.jpg" class="gallery-item-image" id="ga15">
+            </a>
+            <a href="#ga16" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga16.jpg" class="gallery-item-image" id="ga16">
+            </a>
+            <a href="#ga17" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga17.jpg" class="gallery-item-image" id="ga17">
+            </a>
+            <a href="#ga18" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga18.jpg" class="gallery-item-image" id="ga18">
+            </a>
+            <a href="#ga19" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga19.jpg" class="gallery-item-image" id="ga19">
+            </a>
+            <a href="#ga20" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga20.jpg" class="gallery-item-image" id="ga20">
+            </a>
+            <a href="#ga21" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga21.jpg" class="gallery-item-image" id="ga21">
+            </a>
+            <a href="#ga22" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga22.jpg" class="gallery-item-image" id="ga22">
+            </a>
+            <a href="#ga23" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga23.jpg" class="gallery-item-image" id="ga23">
+            </a>
+            <a href="#ga24" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga24.jpg" class="gallery-item-image" id="ga24">
+            </a>
+            <a href="#ga25" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga25.jpg" class="gallery-item-image" id="ga25">
+            </a>
+            <a href="#ga26" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga26.jpg" class="gallery-item-image" id="ga26">
+            </a>
+            <a href="#ga27" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga27.jpg" class="gallery-item-image" id="ga27">
+            </a>
+            <a href="#ga28" class="gallery-item" data-fslightbox="gallery">
+                <img src="assets/images/ga28.jpg" class="gallery-item-image" id="ga28">
             </a>
         </div>
     </div>
@@ -163,12 +310,12 @@
                 <div class="instructions">
                     <h3>Réserver une chambre</h3>
                     <p class="book-instructions">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, a, illo enim delectus rerum odit facilis provident voluptates magni ab, est praesentium! Ex id natus excepturi quidem autem consequuntur.
+                        Je vous invite à me contacter par mail via le formulaire suivant ou directement par téléphone pour réserver votre séjour au Domaine d'Ardgalen.
                     </p>
                     <h3>Contactez-moi</h3>
                     <p class="book-instructions">
-                        <strong>Email : </strong> blabla@ardgalen.fr<br />
-                        <strong>Téléphone : </strong> 05 00 00 00 00
+                        <strong>Email : </strong> bureau.marielaure@gmail.com<br />
+                        <strong>Téléphone : </strong> <a href="tel:+33699406102">06 99 40 61 02 </a>
                     </p>
                 </div>
                 <div id="map">
@@ -210,28 +357,28 @@
                     <p id="plus-clair">Quelle(s) chambre(s) souhaitez-vous réserver ?</p>
                     <div class="form-row form-row-2 no-margin">
                         <label class="check-group">Chambre Cachemire
-                            <input type="checkbox">
+                            <input type="checkbox" id="check-cachemire">
                             <span class="checkmark"></span>
                         </label>
-                        <label class="check-group">Chambre Edburn
-                            <input type="checkbox">
+                        <label class="check-group">Chambre Hepburn
+                            <input type="checkbox" id="check-hepburn">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="form-row form-row-2">
-                        <label class="check-group">Chambre Cachemire
-                            <input type="checkbox">
+                        <label class="check-group">Chambre Muse
+                            <input type="checkbox" id="check-muse">
                             <span class="checkmark"></span>
                         </label>
-                        <label class="check-group">Chambre Edburn
-                            <input type="checkbox">
+                        <label class="check-group">Chambre Zen
+                            <input type="checkbox" id="check-zen">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="form-row form-row-1">
                         <div class="input-group message">
                             <label for="end" class="input-label">Votre message</label>
-                            <textarea placeholder="Donnez-moi toutes les informations que je dois prendre en compte pour le bon déroulement de votre séjour"></textarea>
+                            <textarea placeholder="Afin de vous recevoir dans les meilleures conditions, je vous invite à me présicer toutes les informations que je dois prendre en compte pour le bon déroulement de votre séjour"></textarea>
                         </div>
                     </div>
                     <button class="btn" type="submit">Envoyer votre demande</button>
@@ -265,6 +412,12 @@
 
             document.querySelectorAll('input[type=date]').forEach(input => {
                 input.value = (new Date()).toISOString().split('T')[0];
+            });
+
+            document.querySelectorAll('a[data-book]').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    document.getElementById(`check-${this.dataset.book}`).checked = true;
+                });
             });
         });
     </script>
