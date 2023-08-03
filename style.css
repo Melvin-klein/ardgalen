@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .overlay {
@@ -73,16 +75,16 @@ section .container {
     color: rgb(255, 255, 255);
     display: inline-block;
     font-family: "Plus Jakarta Sans";
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     hyphens: manual;
     letter-spacing: 3px;
     line-height: 57px;
-    padding-bottom: 8px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
     text-align: center;
     text-decoration-color: rgb(255, 255, 255);
     text-decoration-line: none;
@@ -232,12 +234,14 @@ input:focus {
     position: relative;
     width: 100vw;
     height: 100vh;
+    min-height: 520px;
     background-image: url("assets/images/cover.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 #cover h1 {
@@ -248,13 +252,13 @@ input:focus {
     font-weight: 400;
     font-style: normal;
     color: #fff;
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 10vh;
 }
 
 .cover__lead {
     position: relative;
-    font-size: 45px;
+    font-size: 28px;
     color: #fff;
     line-height: 1.46em;
     text-align: center;
@@ -273,8 +277,8 @@ input:focus {
     animation-delay: 0.2s;
     color: white;
     text-decoration: none;
-    padding: 18px 30px 18px 30px;
-    font-size: 13px;
+    padding: 15px 20px 15px 20px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -326,15 +330,27 @@ input:focus {
 
 /* SECTION : features */
 
+#features .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
 .features__feature {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Plus Jakarta Sans";
+    margin-top: 50px;
+    min-width: 100px;
+}
+
+.features__feature:first-of-type {
+    margin-top: 0;
 }
 
 .features__feature p {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .features__feature img {
@@ -354,22 +370,23 @@ input:focus {
 
 #rooms .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .rooms__slider {
-    width: 50%;
+    width: 100%;
+    height: 250px;
 }
 
 .rooms__info {
-    width: 50%;
+    width: 100%;
     padding: 4% 6% 4% 6%;
     background-color: white;
 }
 
 .rooms__info h2 {
     margin-bottom: 25px;
-    font-size: 48px;
+    font-size: 25px;
 }
 
 .rooms__info .hr {
@@ -379,15 +396,16 @@ input:focus {
 }
 
 .rooms__price {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.3em;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-family: var(--font-elegant);
 }
 
 .rooms__description {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #7D8184;
     font-size: 16px;
     line-height: 1.78em;
@@ -397,7 +415,7 @@ input:focus {
 
 .rooms__features {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 50px;
 }
 
@@ -409,10 +427,11 @@ input:focus {
     font-weight: 200;
     color: #7D8184;
     margin-right: 40px;
+    margin-top: 20px;
 }
 
 .rooms__feature img {
-    width: 40px;
+    width: 30px;
     margin-right: 20px;
 }
 
@@ -423,7 +442,7 @@ input:focus {
 }
 
 #presentation__host-letter__text {
-    width: 70%;
+    width: 100%;
     background-color: #F3F3F3;
     padding: 70px 160px 70px 70px;
     font-family: "Plus Jakarta Sans";
@@ -481,7 +500,7 @@ input:focus {
 
 #booking .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .booking__info {
@@ -608,16 +627,59 @@ input:focus {
         width: 100%;
     }
 
-    #cover h1 {
-        position: relative;
-        color: white;
-        line-height: 29px;
-        letter-spacing: 0px;
-        font-weight: 400;
+    .btn {
+        background-color: var(--color-dark-blue);
+        box-shadow: none;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        font-family: "Plus Jakarta Sans";
+        font-size: 14px;
         font-style: normal;
-        color: #fff;
+        font-weight: 700;
+        hyphens: manual;
+        letter-spacing: 3px;
+        line-height: 57px;
+        padding-bottom: 8px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 8px;
+        text-align: center;
+        text-decoration-color: rgb(255, 255, 255);
+        text-decoration-line: none;
+        text-decoration-style: solid;
+        text-decoration-thickness: auto;
+        text-transform: uppercase;
+        -moz-osx-font-smoothing: grayscale;
+        border: none;
+        cursor: pointer;
+    }
+
+    #cover h1 {
         font-size: 25px;
-        margin-top: 10vh;
+    }
+
+    .cover__lead {
+        font-size: 40px;
+    }
+
+    .cover__btn {
+        padding: 18px 30px 18px 30px;
+        font-size: 13px;
+    }
+
+    #features .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .features__feature {
+        margin-top: 0;
+    }
+
+    .rooms__slider {
+        height: 350px;
     }
 }
 
@@ -630,12 +692,75 @@ input:focus {
 @media (min-width: 1024px) {
     .container {
         width: 1000px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* SECTION : features */
+
+    #features .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .features__feature p {
+        margin-top: 30px;
+    }
+
+    /* SECTION : rooms */
+
+    #rooms .container {
+        flex-direction: row;
+    }
+
+    .rooms__slider {
+        width: 50%;
+        height: inherit;
+    }
+
+    .rooms__info {
+        width: 50%;
+    }
+
+    .rooms__info h2 {
+        margin-bottom: 25px;
+        font-size: 48px;
+    }
+
+    .rooms__price {
+        font-size: 18px;
+        margin-bottom: 27px;
+        margin-top: 0;
+    }
+
+    .rooms__description {
+        margin-bottom: 50px;
+    }
+
+    .rooms__features {
+        flex-direction: row;
+    }
+
+    .rooms__feature {
+        margin-top: 0;
+    }
+
+    .rooms__feature img {
+        width: 40px;
     }
 }
 
 @media (min-width: 1280px) {
     .container {
         width: 1100px;
+    }
+
+    #presentation__host-letter__text {
+        width: 70%;
+    }
+
+    #booking .container {
+        flex-direction: row;
     }
 }
 
