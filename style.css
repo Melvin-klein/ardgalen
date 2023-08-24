@@ -235,7 +235,7 @@ input:focus {
     width: 100vw;
     height: 100vh;
     min-height: 520px;
-    background-image: url("assets/images/cover.jpg");
+    background-image: url("assets/images/cover-1.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
