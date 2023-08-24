@@ -116,7 +116,7 @@ input:focus {
 }
 
 .form-row-2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .form-row-1 {
@@ -439,12 +439,13 @@ input:focus {
 
 #presentation__host-letter {
     position: relative;
+    flex-direction: column;
 }
 
 #presentation__host-letter__text {
     width: 100%;
     background-color: #F3F3F3;
-    padding: 70px 160px 70px 70px;
+    padding: 20px;
     font-family: "Plus Jakarta Sans";
     line-height: 1.5rem;
     font-weight: 200;
@@ -455,30 +456,25 @@ input:focus {
     padding-right: 50px;
     font-family: 'Tangerine', cursive;
     font-size: 30px;
+    margin-top: 30px;
 }
 
 #presentation__host-letter__photo {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 40%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 400px;
 }
 
 #presentation__host-letter__photo div {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-image: url('assets/images/hote.jpg');
     background-size: cover;
 }
 
 #presentation__gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .presentation__gallery__item {
@@ -506,7 +502,6 @@ input:focus {
 .booking__info {
     display: flex;
     flex-direction: column;
-    width: 40%;
 }
 
 .booking__info__book-instructions {
@@ -547,7 +542,6 @@ input:focus {
 #booking__form {
     background-color: white;
     padding: 4% 6% 4% 6%;
-    width: 60%;
 }
 
 #booking__form .btn {
@@ -696,6 +690,10 @@ input:focus {
         padding-right: 0;
     }
 
+    .form-row-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* SECTION : features */
 
     #features .container {
@@ -747,6 +745,43 @@ input:focus {
 
     .rooms__feature img {
         width: 40px;
+    }
+
+    #presentation__host-letter__text {
+        padding: 70px 160px 70px 70px;
+    }
+
+    #presentation__host-letter__photo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 500px;
+    }
+
+    #presentation__host-letter__photo div {
+        width: 100%;
+        height: 400px;
+        background-image: url('assets/images/hote.jpg');
+        background-size: cover;
+    }
+
+    #presentation__gallery {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 70px;
+    }
+
+    .booking__info {
+        width: 40%;
+    }
+
+    #booking__form {
+        background-color: white;
+        padding: 4% 6% 4% 6%;
+        width: 60%;
     }
 }
 
